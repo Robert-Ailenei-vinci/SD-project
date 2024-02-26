@@ -1,19 +1,19 @@
 import java.util.Objects;
 
 public class Road {
-    private final int start_city;
-    private final int end_city;
+    private final City start_city;
+    private final City end_city;
 
-    public Road(int start_city, int end_city) {
+    public Road(City start_city, City end_city) {
         this.start_city = start_city;
         this.end_city = end_city;
     }
 
-    public int getStart_city() {
+    public City getStart_city() {
         return start_city;
     }
 
-    public int getEnd_city() {
+    public City getEnd_city() {
         return end_city;
     }
 

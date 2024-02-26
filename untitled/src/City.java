@@ -34,12 +34,12 @@ public class City {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         City city = (City) o;
-        return id == city.id && Double.compare(city.longitude, longitude) == 0 && Double.compare(city.latitude, latitude) == 0 && Objects.equals(name, city.name);
+        return id == city.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, longitude, latitude);
+        return Objects.hash(id);
     }
 
     @Override
